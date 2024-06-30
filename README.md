@@ -15,6 +15,9 @@ Self-supervised Learning
 
 ## 模型训练
 ### 自监督MoCo
+
+下列脚本中的lr、batch-size等参数可根据需要进行修改。
+
 1. 预训练
    
    ```
@@ -35,8 +38,6 @@ Self-supervised Learning
    --dist-url 'tcp://localhost:10001' --multiprocessing-distributed --world-size 1 --rank 0 \
    [folder with train and val folders]
    ```
-
-上述参数可根据需要进行修改。
 
 ### 监督学习
 1. 预训练
