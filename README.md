@@ -16,6 +16,7 @@ Self-supervised Learning
 ## 模型训练
 ### 自监督MoCo
 1. 预训练
+   
    ```
    python main_moco.py \
    -a resnet18 \
@@ -25,6 +26,7 @@ Self-supervised Learning
    [folder with train and val folders]
 
 2. 分类头
+   
    ```
    python main_lincls.py \
    -a resnet18 \
@@ -44,7 +46,7 @@ Self-supervised Learning
    ```
    python ./supervised.py
    ```
-3. Tensorboard可视化
+2. Tensorboard可视化
    ```
    tensorboard --logdir='./logs/runs_cls'
    ```
@@ -57,7 +59,7 @@ Self-supervised Learning
    ```
    python ./resnet18.py
    ```
-3. Tensorboard可视化
+2. Tensorboard可视化
    ```
    tensorboard --logdir='./logs/runs_runs_cifar100_resnet18'
    ```
