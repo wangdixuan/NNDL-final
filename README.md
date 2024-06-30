@@ -16,7 +16,7 @@ Self-supervised Learning
 ## 模型训练
 ### 自监督MoCo
 
-下列脚本中的lr、batch-size等参数可根据需要进行修改。
+下列脚本中的`lr`、`batch-size`等参数可根据需要进行修改。
 
 1. 预训练
    
