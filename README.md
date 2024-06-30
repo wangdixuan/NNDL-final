@@ -42,7 +42,7 @@ Self-supervised Learning
 ### 监督学习
 1. 预训练
    
-   修改train_dataset及val_dataset变量路径为数据集所在路径。
+   修改`train_dataset`及`val_dataset`变量路径为数据集所在路径。
    ```
    python ./supervised.py
    ```
@@ -55,7 +55,7 @@ Self-supervised Learning
 ### 直接训练ResNet18
 1. 预训练
    
-   修改train_dataset及val_dataset变量路径为数据集所在路径。
+   修改`train_dataset`及`val_dataset`变量路径为数据集所在路径。
    ```
    python ./resnet18.py
    ```
