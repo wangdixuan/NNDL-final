@@ -39,8 +39,8 @@ Self-supervised Learning
 
 ### 监督学习
 1. 预训练
-   ```
    修改train_dataset及val_dataset变量路径为训练数据集。
+   ```
    python ./supervised.py
    ```
 2. Tensorboard可视化
@@ -51,8 +51,8 @@ Self-supervised Learning
 
 ### 直接训练ResNet18
 1. 预训练
-   ```
    修改train_dataset及val_dataset变量路径为训练数据集。
+   ```
    python ./resnet18.py
    ```
 2. Tensorboard可视化
