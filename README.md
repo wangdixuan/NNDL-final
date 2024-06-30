@@ -42,13 +42,19 @@ Self-supervised Learning
 ### 监督学习
 1. 预训练
    
-   修改`train_dataset`及`val_dataset`变量路径为数据集所在路径。
+   修改`data_dir`变量路径为数据集所在路径。
    ```
    python ./supervised.py
    ```
-2. Tensorboard可视化
+2. 分类头
    ```
-   tensorboard --logdir='./logs/runs_cls'
+   python main_lincls.py \
+   -a resnet18 \
+   --lr 30.0 \
+   --batch-size 256 \
+   --pretrained [your checkpoint path]/supervised_best_model.pth \
+   --dist-url 'tcp://localhost:10001' --multiprocessing-distributed --world-size 1 --rank 0 \
+   [folder with train and val folders]
    ```
 
 
